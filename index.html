@@ -57,6 +57,17 @@ img{
 		height:40px;
 			}
 
+	#game_canquan{
+		margin:0 auto;
+		width:350px;
+		height:30px;
+		font-size: 30px;
+		line-height: 30px;
+		font-weight: bold;
+		position: absolute;
+		top:400px;
+		left:36%;
+	}
 </style>
 
 </head>
@@ -103,6 +114,8 @@ img{
 		<button style="width:10%;height:44px;margin-left:-8px;font-size:33px;font-family:'楷体'">搜索</button>
 
 	</div>
+	
+	<button id="game_canquan" onclick="games()">猜拳小游戏，敢玩不？</button>
 <script type="text/javascript">
 	var one=document.getElementById('body_xh');
 	var two=document.getElementById('real');
@@ -125,6 +138,10 @@ function changeToLeft(){
 	function onblues(){
 		var m=document.getElementById('sousous');
 		m.focus();
+	}
+
+	function games(){
+		window.open("game.html","猜拳~");
 	}
 </script>
 </body>

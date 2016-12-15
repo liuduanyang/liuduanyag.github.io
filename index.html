@@ -5,60 +5,35 @@
 	<meta name="baidu-site-verification" content="e594wdiLng" />
 	<meta name="baidu-site-verification" content="9KnmqDnuNG" />
 	<title>我们的小屋 | My family</title>
-	<style type="text/css">
-*{
-	text-align: center;
-	padding:0px;
-	margin:0px;
+<!-- 设置样式 -->
+<style type="text/css">
+	*{
+		text-align: center;
+		padding:0px;
+		margin:0px;
 }
-body{
-	background-image:url(images/xiamu2.jpg);
-
-
-}
-img{
+	body{
+		background-image:url(images/xiamu2.jpg);
+	}
+	#bodys img{
 		width:400px;
 		height:300px;
-}
+	}
 	#titles li{
 		float:left;
 		list-style: none;
 		width:20%;
 	}
-
 	.cla{
 		text-decoration: none;
 		color:#fff;
 		font-size: 30px;
 		line-height: 50px;
 	}
-
 	#title{
 		height:50px;
 		background-color: #7093db;
 	}
-
-#bodys{
-	width:100%;
-}
-	
-	#body_xh{
-		white-space: nowrap;
-		overflow:hidden;
-		width:90%;
-		height:300px;
-		float: left;
-		margin-left: 5%;
-	}
-
-	#sousou{
-		position: absolute;
-		left:8%;
-		top:500px;
-		width:80%;
-		height:40px;
-			}
-
 	#game_canquan{
 		margin:0 auto;
 		width:350px;
@@ -67,8 +42,26 @@ img{
 		line-height: 30px;
 		font-weight: bold;
 		position: absolute;
-		top:400px;
+		top:500px;
 		left:36%;
+	}
+	#sousuo{
+		width:800px;
+		height:30px;
+		line-height: 30px;
+		position: absolute;
+		top:350px;
+		left:15%;
+		font-size: 30px;
+	}
+	#sousuo_button{
+		width:200px;
+		height:34px;
+		font-size: 30px;
+		line-height: 30px;
+		position: absolute;
+		top:350px;
+		right:11.5%;
 	}
 </style>
 
@@ -78,72 +71,42 @@ img{
 	<ul id="titles">
 		<li><a href="" class="cla">首页</a></li>
 		<li><a href="" class="cla">日常</a></li>
-		<li><a href="" class="cla">恩爱秀</a></li>
-		<li><a href="" class="cla">Baby</a></li>
+		<li><a href="photos.html" class="cla">照片墙</a></li>
+		<li><a href="game.html" class="cla">休闲</a></li>
 		<li><a href="" class="cla">我们</a></li>
 	</ul>
 </div>
-<div id="bodys">
 
-	<div id="body_xh">
-		<span id="real" onmouseover="stop()" onmouseout="zhouqi()">
-			<img src="images/1.jpg">
-			<img src="images/2.jpg">
-			<img src="images/3.jpg">
-			<img src="images/4.jpg">						
-			<img src="images/5.jpg">
-			<img src="images/6.jpg">
-			<img src="images/7.jpg">
-			<img src="images/8.jpg">			
-		</span>
-		<span id="fals">
-			<img src="images/1.jpg">
-			<img src="images/2.jpg">
-			<img src="images/3.jpg">
-			<img src="images/4.jpg">						
-			<img src="images/5.jpg">
-			<img src="images/6.jpg">
-			<img src="images/7.jpg">
-			<img src="images/8.jpg">
-		</span>
-	</div>
+<!-- 百度搜索组件 -->
+	<input name=ie type=hidden value=utf-8>
 
-</div>
-
-	<div id="sousou">
-		
-		<input id="sousous" stype="text" name="" style="width:80%;height:40px;font-size:35px;">
-		<button style="width:10%;height:44px;margin-left:-8px;font-size:33px;font-family:'楷体'">搜索</button>
-
-	</div>
+	<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+    	<input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+		<input type="text"  onfocus="checkHttps" name="word" id="sousuo" size="30">
+    	<input type="submit" value="端阳一下" id="sousuo_button">
+	</form>
+	<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+	<script>
+    function checkHttps () {
+        BaiduHttps.useHttps();    
+    };
+    function baiduWithHttps (formname) {
+        var data = BaiduHttps.useHttps();
+        if (data.s === 0) {
+            return true;
+        }
+        else {
+            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+            return true;
+        }
+    };
+</script>
+<!-- 结束 -->
 	
-	<button id="game_canquan" onclick="games()">猜拳小游戏，敢玩不？</button>
 <script type="text/javascript">
-	var one=document.getElementById('body_xh');
-	var two=document.getElementById('real');
-	var three=document.getElementById('fals');	
-function changeToLeft(){
-		if(one.scrollLeft-two.offsetWidth>0)    
-			one.scrollLeft=0;
-		else
-			one.scrollLeft+=1; 
-}
-
-	function zhouqi(){
-		t=setInterval("changeToLeft()",10);  
-	}
-
-	function stop(){
-		clearInterval(t);
-	}
-
 	function onblues(){
 		var m=document.getElementById('sousous');
 		m.focus();
-	}
-
-	function games(){
-		window.open("game.html","猜拳~");
 	}
 </script>
 </body>

@@ -1,111 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="baidu-site-verification" content="e594wdiLng" />
-	<meta name="baidu-site-verification" content="9KnmqDnuNG" />
-	<title>我们的小屋 | My family</title>
-<!-- 设置样式 -->
-<style type="text/css">
-	*{
-		text-align: center;
-		padding:0px;
-		margin:0px;
-}
-	body{
-		background-image:url(images/xiamu3.jpg);
-		background-repeat: no-repeat;
-		background-size: 1366px 631px;
-	}
-	#titles li{
-		float:left;
-		list-style: none;
-		width:20%;
-	}
-	.cla{
-		text-decoration: none;
-		color:#fff;
-		font-size: 30px;
-		line-height: 50px;
-	}
-	#title{
-		height:50px;
-		background-color: #7093db;
-	}
-	#game_canquan{
-		margin:0 auto;
-		width:350px;
-		height:30px;
-		font-size: 30px;
-		line-height: 30px;
-		font-weight: bold;
-		position: absolute;
-		top:500px;
-		left:36%;
-	}
-	#sousuo{
-		width:800px;
-		height:30px;
-		line-height: 30px;
-		position: absolute;
-		top:350px;
-		left:15%;
-		font-size: 30px;
-	}
-	#sousuo_button{
-		width:200px;
-		height:34px;
-		font-size: 30px;
-		line-height: 30px;
-		position: absolute;
-		top:350px;
-		right:11.5%;
-	}
-</style>
-
+    <meta charset="UTF-8">
+    <title>爬虫一号</title>
 </head>
-<body onload="zhouqi();onblues()">
-<div id="title">
-	<ul id="titles">
-		<li><a href="" class="cla">首页</a></li>
-		<li><a href="" class="cla">日常</a></li>
-		<li><a href="photos.html" class="cla">照片墙</a></li>
-		<li><a href="game.html" class="cla">休闲</a></li>
-		<li><a href="" class="cla">我们</a></li>
-	</ul>
-</div>
-
-<!-- 百度搜索组件 -->
-	<input name=ie type=hidden value=utf-8>
-
-	<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
-    	<input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-		<input type="text"  onfocus="checkHttps" name="word" id="sousuo" size="30">
-    	<input type="submit" value="端阳一下" id="sousuo_button">
-	</form>
-	<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
-	<script>
-    function checkHttps () {
-        BaiduHttps.useHttps();    
-    };
-    function baiduWithHttps (formname) {
-        var data = BaiduHttps.useHttps();
-        if (data.s === 0) {
-            return true;
-        }
-        else {
-            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
-            return true;
-        }
-    };
-</script>
-<!-- 结束 -->
-	
-<script type="text/javascript">
-	function onblues(){
-		var m=document.getElementById('sousous');
-		m.focus();
-	}
-</script>
+<body>
+    <h1>欢迎来到爬虫一号</h1>
+    <p>这里是刘端阳的个人github，该网页用来练习python 爬虫！非战斗人员紧急撤离！！</p>
 </body>
 </html>

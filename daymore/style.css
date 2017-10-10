@@ -1,0 +1,109 @@
+/* 通用设置 */
+*{
+    padding:0px;
+    margin:0px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+
+/* 导航 */
+.header{
+    width:100%;
+    height:45px;
+    background-color:rgb(4,78,151);
+}
+.header p{
+    height:45px;
+    line-height:45px;
+    text-align: center;
+    font-size:40px;
+    font-weight:bold;
+    color:white;
+}
+
+/* 中间内容 */
+.center{
+    overflow: hidden;
+}
+/* 中间的左部分 */
+.cen_left{
+    width:30%;
+    float:left;
+    border-right:1px solid gray;
+}
+.cen_left_pic{
+    width:100px;
+    height:100px;
+    margin:0 auto;
+    margin-top:30px;
+    /* border-radius:50px;
+    border:1px solid gray;
+    overflow:hidden; */
+}
+.cen_left_pic img{
+    width:100px;
+    height:100px;
+}
+.cen_left_card{
+    width:60%;
+    margin:0 auto;
+    margin-top:50px;
+}
+.cen_left_card li{
+    line-height:30px;
+}
+
+
+/* 中间的右部分 */
+.cen_right{
+    width:69%;
+    float:left;
+}
+.cen_right_tab{
+    border-bottom:1px solid gray;
+    width:100%;
+    margin-left:0.5%;
+    text-align: center;
+}
+.cen_right_tab td:nth-child(1){
+    width:30%;
+    border-right:1px solid gray;
+}
+.cen_right_tab td:nth-child(2){
+    width:70%;
+}
+
+/* 底部 */
+.bottom{
+    width:100%;
+    text-align:center;
+    position:fixed;
+    bottom:0px;
+    height:60px;
+    line-height:60px;
+}
+.b_span{
+    display: inline-block;
+    height:60px;
+    line-height:60px;
+    vertical-align:top;
+}
+.b_text{
+    display: inline-block;
+    height:50px;
+    line-height:60px;
+    vertical-align:middle;
+}
+.b_but{
+    display: inline-block;
+    width:80px;
+    height:30px;
+    line-height:25px;
+    font-size:25px;
+    margin-left:30px;
+}

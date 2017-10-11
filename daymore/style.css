@@ -29,6 +29,8 @@ a{
 /* 中间内容 */
 .center{
     overflow: hidden;
+    background-image:url('images/back.jpg');
+    background-size:100% 100%;
 }
 /* 中间的左部分 */
 .cen_left{
@@ -41,9 +43,8 @@ a{
     height:100px;
     margin:0 auto;
     margin-top:30px;
-    /* border-radius:50px;
-    border:1px solid gray;
-    overflow:hidden; */
+    border-radius:50px;
+    overflow:hidden;
 }
 .cen_left_pic img{
     width:100px;
@@ -65,10 +66,12 @@ a{
     float:left;
 }
 .cen_right_tab{
-    border-bottom:1px solid gray;
     width:100%;
     margin-left:0.5%;
     text-align: center;
+}
+.cen_right_tab td{
+    border-bottom:1px solid gray;
 }
 .cen_right_tab td:nth-child(1){
     width:30%;
@@ -78,32 +81,32 @@ a{
     width:70%;
 }
 
-/* 底部 */
+/* 左边底部 */
 .bottom{
+    margin-top:30px;
     width:100%;
     text-align:center;
-    position:fixed;
-    bottom:0px;
-    height:60px;
-    line-height:60px;
 }
-.b_span{
-    display: inline-block;
-    height:60px;
-    line-height:60px;
-    vertical-align:top;
-}
-.b_text{
-    display: inline-block;
+.bottom_p{
     height:50px;
-    line-height:60px;
-    vertical-align:middle;
+    line-height:50px;
+    font-size:25px;
 }
 .b_but{
+    margin-top:10px;
     display: inline-block;
     width:80px;
     height:30px;
     line-height:25px;
     font-size:25px;
-    margin-left:30px;
+    margin-bottom:11px;
+}
+
+/* 音乐播放器的设置 */
+.music{
+    width:100px;
+    height:38px;
+    position: absolute;
+    right:0px;
+    top:0px;
 }

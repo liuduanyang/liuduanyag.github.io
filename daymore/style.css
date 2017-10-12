@@ -11,11 +11,15 @@ a{
     color:black;
 }
 
+body{
+    background-image:url('images/back.jpg');
+    background-size:100% 100%;
+}
 /* 导航 */
 .header{
     width:100%;
     height:45px;
-    background-color:rgb(4,78,151);
+    background-color:rgba(4,78,151,0.2);
 }
 .header p{
     height:45px;
@@ -29,8 +33,6 @@ a{
 /* 中间内容 */
 .center{
     overflow: hidden;
-    background-image:url('images/back.jpg');
-    background-size:100% 100%;
 }
 /* 中间的左部分 */
 .cen_left{
@@ -109,4 +111,22 @@ a{
     position: absolute;
     right:0px;
     top:0px;
+}
+
+/* 搜索 */
+.soudiv{
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+.sou{
+    height:20px;
+    line-height: 20px;
+    font-size:16px;
+}
+
+#souul li{
+    width:198px;
+    background-color: white;
+    color:black;
 }

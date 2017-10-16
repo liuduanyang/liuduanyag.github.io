@@ -12,7 +12,7 @@ a{
 }
 
 body{
-    background-image:url('images/back1.jpg');
+    /* background-image:url('images/back1.jpg');  JS实现*/
     background-size:100% 100%;
 }
 /* 导航 */
@@ -120,9 +120,12 @@ body{
     left:10px;
 }
 .sou{
+    width:200px;
     height:20px;
     line-height: 20px;
     font-size:16px;
+    border:3px solid white;
+    border-radius:5px;
 }
 
 #souul li{
